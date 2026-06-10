@@ -80,6 +80,7 @@ export default function FloorPlate({ floor, selectedCode, onSelect, buildingFilt
             )
           }
           // Rectangle fallback.
+          if (!h.rect) return null
           return (
             <rect
               key={`${h.code}-${h.idx}`}

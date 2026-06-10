@@ -31,6 +31,7 @@ export default function StickyCTA() {
       role="complementary"
       aria-label="פעולה מהירה"
       aria-hidden={!visible}
+      inert={!visible || undefined}
     >
       <div className="sticky-cta-copy">
         <strong>השאירו פרטים</strong>

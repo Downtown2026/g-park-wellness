@@ -16,15 +16,14 @@
 const _FLOORS_HIGH_FIRST = [
   // ════════════════════════════════════════════════════
   // FLOOR 15 — מגה־פנטהאוז (tower roof, single residence)
-  // The entire roof is occupied by ONE penthouse: 185 m² built + 117 m²
-  // roof terrace. Plate references the same overhead view as floor 8 until
-  // a dedicated floor-15 plate is rendered.
+  // Dedicated plate (15.pdf, May-2026 set): one 185 m² penthouse on the
+  // west bar of the roof + 117 m² east roof terrace.
   // ════════════════════════════════════════════════════
   {
     id: 'tower-15-mega',
     label: 'קומה 15 · מגה־פנטהאוז',
     short: '15',
-    plate: '/floorplans/plates/tower-15-setback.webp',
+    plate: '/floorplans/plates/tower-15.webp',
     note: 'הקומה העליונה של המגדל — דירה אחת ייחודית: מגה־פנטהאוז של 185 מ״ר בנוי עם 117 מ״ר מרפסת גג.',
     apartments: [
       // The MEGA covers the entire central tower roof — single hotspot
@@ -36,33 +35,14 @@ const _FLOORS_HIGH_FIRST = [
   },
 
   // ════════════════════════════════════════════════════
-  // FLOOR 14 — שני פנטהאוזים (tower)
+  // FLOOR 14 — דירות גג (tower)
   // ════════════════════════════════════════════════════
   {
-    id: 'tower-14-ph',
-    label: 'קומה 14 · פנטהאוזים',
-    short: '14 PH',
-    plate: '/floorplans/plates/tower-14-ph.webp',
-    note: 'שני פנטהאוזים — מערבי 5 חדרים (155 + 128 גג) ומזרחי 6 חדרים (160 + 178 גג).',
-    apartments: [
-      { code: 'PH-W', polygon: [
-        [0.640, 0.330], [0.640, 0.640], [0.770, 0.640], [0.770, 0.330]
-      ]},
-      { code: 'PH-E', polygon: [
-        [0.770, 0.330], [0.770, 0.640], [0.913, 0.640], [0.913, 0.330]
-      ]},
-    ],
-  },
-
-  // ════════════════════════════════════════════════════
-  // FLOOR 14 (mini) — מיני פנטהאוזים + פנטהאוזים בוטיק
-  // ════════════════════════════════════════════════════
-  {
-    id: 'tower-mini-ph',
-    label: 'קומה 14 · מיני פנטהאוז',
-    short: '14 MP',
-    plate: '/floorplans/plates/tower-mini-ph.webp',
-    note: 'מיני פנטהאוזים במגדל; בבנייני הבוטיק — דירות 5 חדרים בקצה.',
+    id: 'tower-14',
+    label: 'קומה 14 · דירות גג',
+    short: '14',
+    plate: '/floorplans/plates/tower-14.webp',
+    note: 'שתי דירות גג עם מרפסות היקפיות — מערבית (155 + גג) ומזרחית (160 + גג). גגות בנייני הבוטיק פתוחים מתחת.',
     apartments: [
       { code: 'PH-W', polygon: [
         [0.640, 0.330], [0.640, 0.640], [0.770, 0.640], [0.770, 0.330]
@@ -105,8 +85,8 @@ const _FLOORS_HIGH_FIRST = [
     id: 'tower-8-setback',
     label: 'קומה 8 · נסיגה',
     short: '8',
-    plate: '/floorplans/plates/tower-15-setback.webp',
-    note: 'קומת נסיגה במגדל — דירות SB-132 (אמצע) ו-SB-150 (פינה). על גגות הבוטיק נראים מיני־פנטהאוזים.',
+    plate: '/floorplans/plates/tower-8.webp',
+    note: 'קומת הנסיגה של המגדל — דירות 132 ו-150 מ״ר עם מרפסות גג של 40–48 מ״ר בפינות. גגות בנייני הבוטיק פתוחים כמרפסות הפנטהאוזים.',
     apartments: [
       // Tower setback — same 4-apartment layout as floors 9-13, but as SB units
       { code: 'SB-132', polygon: [
@@ -132,7 +112,7 @@ const _FLOORS_HIGH_FIRST = [
     label: 'קומה 7 · פנטהאוזים בוטיק',
     short: '7 PH',
     plate: '/floorplans/plates/boutique-7-ph.webp',
-    note: 'הקומה העליונה של בנייני הבוטיק — פנטהאוזים עם מרפסת גג.',
+    note: 'הקומה העליונה של בנייני הבוטיק — פנטהאוזים עם מרפסת גג. במגדל זו עדיין קומה טיפוסית (2–7).',
     apartments: [
       // North boutique penthouses (3 buildings — distinct codes per building
       // because each one has a different roof-terrace area).
@@ -159,18 +139,30 @@ const _FLOORS_HIGH_FIRST = [
       { code: 'BPH-W', polygon: [
         [0.243, 0.510], [0.243, 0.695], [0.358, 0.695], [0.358, 0.510]
       ]},
-      // Tower at this level — typical high
-      { code: 'T-132', polygon: [
-        [0.640, 0.330], [0.640, 0.522], [0.770, 0.522], [0.770, 0.330]
+      // Tower at this level — still a TYPICAL floor (the tower's typical
+      // plate runs 2-7; the 9-13 types start above the floor-8 setback).
+      // 7 units: D-80, C-130, E-65 ×3, F-110 ×2.
+      { code: 'D', polygon: [
+        [0.677, 0.302], [0.677, 0.395], [0.770, 0.395], [0.770, 0.302]
       ]},
-      { code: 'T-132', polygon: [
-        [0.770, 0.330], [0.770, 0.522], [0.913, 0.522], [0.913, 0.330]
+      { code: 'C', polygon: [
+        [0.770, 0.302], [0.770, 0.480], [0.913, 0.480], [0.913, 0.330],
+        [0.880, 0.302]
       ]},
-      { code: 'T-150', polygon: [
-        [0.620, 0.522], [0.620, 0.755], [0.770, 0.755], [0.770, 0.522]
+      { code: 'E', polygon: [
+        [0.770, 0.480], [0.770, 0.645], [0.870, 0.645], [0.870, 0.480]
       ]},
-      { code: 'T-150', polygon: [
-        [0.770, 0.522], [0.770, 0.755], [0.913, 0.755], [0.913, 0.522]
+      { code: 'E', polygon: [
+        [0.595, 0.430], [0.595, 0.515], [0.685, 0.515], [0.685, 0.430]
+      ]},
+      { code: 'E', polygon: [
+        [0.595, 0.515], [0.595, 0.620], [0.685, 0.620], [0.685, 0.515]
+      ]},
+      { code: 'F', polygon: [
+        [0.625, 0.660], [0.625, 0.770], [0.770, 0.770], [0.770, 0.660]
+      ]},
+      { code: 'F', polygon: [
+        [0.770, 0.660], [0.770, 0.770], [0.913, 0.770], [0.913, 0.660]
       ]},
     ],
   },
@@ -183,7 +175,7 @@ const _FLOORS_HIGH_FIRST = [
     label: 'קומות 2–6 · קומות טיפוסיות',
     short: '2–6',
     plate: '/floorplans/plates/tower-2-6.webp',
-    note: 'הקומה הטיפוסית — 17 דירות בקומה: 7 במגדל + 4 במערבי + 6 בצפוני.',
+    note: 'הקומה הטיפוסית — 17 דירות בקומה: 7 במגדל + 4 במערבי + 6 בצפוני. במגדל הקומה הטיפוסית נמשכת עד קומה 7.',
     apartments: [
       // ─── North boutique top row — polygons follow the curved-top outline ───
       // North building 1 (left): B-123 + A (under the curve)
@@ -231,7 +223,8 @@ const _FLOORS_HIGH_FIRST = [
       ]},
 
       // ─── Tower — irregular cross shape, polygons trace each apartment ───
-      // D-82 (top center, north-facing)
+      // 7 units per floor: D-82, C-134, E-67 ×3, F-113 ×2.
+      // D-82 (top, north-facing — the tower's only 3-room 82 m² type)
       { code: 'D', polygon: [
         [0.677, 0.302], [0.677, 0.395], [0.770, 0.395], [0.770, 0.302]
       ]},
@@ -240,20 +233,15 @@ const _FLOORS_HIGH_FIRST = [
         [0.770, 0.302], [0.770, 0.480], [0.913, 0.480], [0.913, 0.330],
         [0.880, 0.302]
       ]},
-      // E-67 right-upper
+      // E-67 east wing
       { code: 'E', polygon: [
-        [0.770, 0.480], [0.770, 0.563], [0.870, 0.563], [0.870, 0.480]
+        [0.770, 0.480], [0.770, 0.645], [0.870, 0.645], [0.870, 0.480]
       ]},
-      // E-67 right-lower
+      // E-67 west-upper (near the core)
       { code: 'E', polygon: [
-        [0.770, 0.563], [0.770, 0.645], [0.870, 0.645], [0.870, 0.563]
-      ]},
-      // D-82 (left-center, small L near tower core).
-      // Tower's 3-room 82 m² is type D only — no A or D-b in the tower.
-      { code: 'D', polygon: [
         [0.595, 0.430], [0.595, 0.515], [0.685, 0.515], [0.685, 0.430]
       ]},
-      // E-67 left-lower
+      // E-67 west-lower
       { code: 'E', polygon: [
         [0.595, 0.515], [0.595, 0.620], [0.685, 0.620], [0.685, 0.515]
       ]},
@@ -307,5 +295,7 @@ const ALL_FLOOR_IDS = FLOORS.map((f) => f.id)
 export const FLOORS_BY_BUILDING = {
   tower:        ALL_FLOOR_IDS,
   'boutique-w': ['boutique-7-ph', 'tower-2-6', 'tower-ground'],
-  'boutique-n': ['boutique-7-ph', 'tower-2-6', 'tower-ground'],
+  // boutique-n has no catalogued ground-floor apartments (its ground level
+  // is commercial + lobbies) — omit the ground plate to avoid an empty state.
+  'boutique-n': ['boutique-7-ph', 'tower-2-6'],
 }

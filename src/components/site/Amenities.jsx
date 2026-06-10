@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 
 const amenities = [
-  { src: '/images/render-pool.png',     title: 'הבריכה',    meta: 'פרגולה ים-תיכונית · בריכה מחוממת' },
-  { src: '/images/render-fitness.png',  title: 'הכושר',     meta: 'אולם אימונים · יוגה · פילאטיס' },
-  { src: '/images/render-lobby.png',    title: 'הלובי',     meta: 'קונסיירז׳ פרטי · ספרייה · קפה' },
-  { src: '/images/render-interior.png', title: 'דירה לדוגמה', meta: 'מטבח אסקלוסיבי · גימור עץ' },
+  { src: '/images/render-pool.webp',     title: 'הבריכה',    meta: 'פרגולה ים-תיכונית · בריכה מחוממת' },
+  { src: '/images/render-fitness.webp',  title: 'הכושר',     meta: 'אולם אימונים · יוגה · פילאטיס' },
+  { src: '/images/render-lobby.webp',    title: 'הלובי',     meta: 'קונסיירז׳ פרטי · ספרייה · קפה' },
+  { src: '/images/render-interior.webp', title: 'דירה לדוגמה', meta: 'מטבח אסקלוסיבי · גימור עץ' },
 ]
 
 /**

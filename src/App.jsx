@@ -8,6 +8,7 @@ import Positioning from './components/site/Positioning.jsx'
 import Wellness from './components/site/Wellness.jsx'
 import ApartmentFinder from './components/site/ApartmentFinder.jsx'
 import Architecture from './components/site/Architecture.jsx'
+import BuildingForm from './components/site/BuildingForm.jsx'
 import Location from './components/site/Location.jsx'
 import Gallery from './components/site/Gallery.jsx'
 import Contact from './components/site/Contact.jsx'
@@ -56,6 +57,7 @@ export default function App() {
         <Wellness />
         <ApartmentFinder />
         <Architecture />
+        <BuildingForm />
         <Location />
         <Gallery />
         <Contact />

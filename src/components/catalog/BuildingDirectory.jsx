@@ -21,8 +21,8 @@ export default function BuildingDirectory({
 }) {
   // Map every apartment code → index of the LOWEST floor it appears on.
   // FLOORS is exported in low→high order, so the first match per code is the
-  // ground-most occurrence. Apartments that never appear on a plate (e.g.
-  // MEGA, currently lacking a floor entry) fall to the bottom.
+  // ground-most occurrence. Codes missing from every plate (none today)
+  // would fall to the bottom.
   const floorRankByCode = useMemo(() => {
     const rank = new Map()
     FLOORS.forEach((floor, floorIdx) => {

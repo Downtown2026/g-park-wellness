@@ -1,17 +1,18 @@
 {
   "_comment": "Maps source PDFs to clean ASCII output names used by the site. Run scripts/build-floorplan-assets.mjs after editing.",
   "sourceDirs": {
-    "plates": "/Users/nivblushinsky/Downloads/תוכנית העמדה",
+    "_comment": "plates: from 'תכניות מגרש 22 (1) 2.zip' (Bar Orian, 06-05-2026) — one dedicated plate per level",
+    "plates": "/Users/nivblushinsky/Downloads/תכניות מגרש 22",
     "units":  "/Users/nivblushinsky/Library/Mobile Documents/com~apple~CloudDocs/תוכניות דירה סופיות ללא קבלן"
   },
   "plates": {
-    "קרקע.pdf":                                    "tower-ground",
-    "קומות 2-6 טיפוסיות.pdf":                      "tower-2-6",
-    "קומות טיפוסיות גבוהות 9-13.pdf":              "tower-9-13",
-    "מיני פנטהאוזים קומה 14 בניין גבוה.pdf":       "tower-mini-ph",
-    "פנטהאוז בניין גבוה.pdf":                      "tower-14-ph",
-    "נסיגה מגדל .pdf":                             "tower-15-setback",
-    "קומה 7 פנטהאוזים בוטיק.pdf":                  "boutique-7-ph"
+    "קרקע.pdf":   "tower-ground",
+    "2-6.pdf":    "tower-2-6",
+    "7.pdf":      "boutique-7-ph",
+    "8.pdf":      "tower-8",
+    "9-13.pdf":   "tower-9-13",
+    "14.pdf":     "tower-14",
+    "15.pdf":     "tower-15"
   },
   "units": {
     "3 חדרים 82 מר בניין מרקמי צפוני ודרומי.pdf":                          "A",
