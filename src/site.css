@@ -989,6 +989,8 @@
 .site-footer-col li { font-size: 0.85rem; margin-block-end: 0.5rem; }
 .site-footer-col a { transition: color 0.3s var(--ease-out); }
 .site-footer-col a:hover { color: var(--bronze); }
+.site-footer-base a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,0.35); }
+.site-footer-base a:hover { text-decoration-color: currentColor; }
 .site-footer-base {
   max-width: var(--max-width);
   margin: 2rem auto 0;
