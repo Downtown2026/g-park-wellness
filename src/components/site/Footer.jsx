@@ -17,7 +17,9 @@ export default function Footer() {
           <Logo height={44} variant="light" />
 
           <a
-            href="#"
+            href="https://www.g-group.estate/"
+            target="_blank"
+            rel="noopener"
             className="site-footer-developer"
             aria-label="By G-Group · יזם הפרויקט"
           >
@@ -68,7 +70,7 @@ export default function Footer() {
 
       <div className="site-footer-base">
         <span>© G&nbsp;Park · Wellness Living · By G‑Group · {new Date().getFullYear()}</span>
-        <span>אדריכלות: בר אוריין · כל ההדמיות והאיורים באתר הם להמחשה בלבד ואינם מחייבים. אין באמור באתר משום הצעה או התחייבות מצד היזם. ט.ל.ח</span>
+        <span>שיווק ומכירות: City Square (G-Group) · עו״ד <a href="https://www.g-group.estate/niv-blushinsky.html" target="_blank" rel="noopener">ניב בלושינסקי</a> · אדריכלות: בר אוריין · כל ההדמיות והאיורים באתר הם להמחשה בלבד ואינם מחייבים. אין באמור באתר משום הצעה או התחייבות מצד היזם. ט.ל.ח</span>
       </div>
     </footer>
   )
