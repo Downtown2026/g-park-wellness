@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowLeft, Phone } from 'lucide-react'
+import { ArrowLeft, Mail } from 'lucide-react'
 
 /**
  * Visit — closing CTA. Editorial centered block, two actions: book a
@@ -52,9 +52,9 @@ export default function Visit() {
             <span>תיאום פגישה</span>
             <ArrowLeft size={16} strokeWidth={1.5} />
           </a>
-          <a href="tel:+972523308287" className="btn btn-ghost" dir="ltr">
-            <Phone size={16} strokeWidth={1.5} />
-            <span>052-330-8287</span>
+          <a href="mailto:sales@g-park.life" className="btn btn-ghost" dir="ltr">
+            <Mail size={16} strokeWidth={1.5} />
+            <span>sales@g-park.life</span>
           </a>
         </motion.div>
       </div>

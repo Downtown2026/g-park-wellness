@@ -12,7 +12,6 @@ import {
   Laptop,
   Blocks,
   MapPin,
-  Phone,
   ArrowLeft,
   Plus,
 } from 'lucide-react'
@@ -712,15 +711,6 @@ function Contact() {
                   <p className="text-sm text-[var(--color-mist)]">מגדלי אקרשטיין · כניסה D</p>
                 </div>
               </div>
-              <div className="flex items-start gap-4 border-t border-[var(--color-stone)] pt-6">
-                <Phone size={20} strokeWidth={1} className="text-[var(--color-wood)] mt-1 shrink-0" />
-                <div>
-                  <p className="eyebrow mb-1">טלפון ישיר</p>
-                  <a href="tel:+972523308287" className="hover:text-[var(--color-wood)] transition-colors">
-                    052‑330‑8287
-                  </a>
-                </div>
-              </div>
             </div>
           </Reveal>
 
@@ -787,12 +777,6 @@ function Footer() {
             <p className="eyebrow opacity-60 mb-4">יצירת קשר</p>
             <p className="text-sm font-light opacity-80 mb-1">המנופים 11, הרצליה</p>
             <p className="text-sm font-light opacity-80 mb-1">מגדלי אקרשטיין · כניסה D</p>
-            <a
-              href="tel:+972523308287"
-              className="text-sm font-light opacity-80 hover:opacity-100 block mt-3"
-            >
-              052‑330‑8287
-            </a>
           </div>
         </div>
 

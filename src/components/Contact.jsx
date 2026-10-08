@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { Send, ArrowLeft, MapPin, Phone, Check } from 'lucide-react'
+import { Send, ArrowLeft, MapPin, Check } from 'lucide-react'
 
 export default function Contact() {
   const ref = useRef(null)
@@ -69,10 +69,6 @@ export default function Contact() {
                         המנופים 11, הרצליה<br />מגדלי אקרשטיין כניסה D
                       </p>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Phone size={20} strokeWidth={1.5} className="text-copper flex-shrink-0" />
-                    <p className="font-body text-[15px] font-[400] text-charcoal" dir="ltr">052-3308287</p>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Phone } from 'lucide-react'
+import { ArrowLeft, Mail } from 'lucide-react'
 
 const TYPE_OPTIONS = [
   { value: '',          label: 'בחרו קטגוריה…', disabled: true },
@@ -153,9 +153,9 @@ export default function Contact() {
                 <span>שלחו לי פרטים</span>
                 <ArrowLeft size={16} strokeWidth={1.5} aria-hidden="true" />
               </button>
-              <a href="tel:+972523308287" className="btn btn-ghost" dir="ltr">
-                <Phone size={16} strokeWidth={1.5} aria-hidden="true" />
-                <span>052-330-8287</span>
+              <a href="mailto:sales@g-park.life" className="btn btn-ghost" dir="ltr">
+                <Mail size={16} strokeWidth={1.5} aria-hidden="true" />
+                <span>sales@g-park.life</span>
               </a>
             </div>
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MessageCircle, ArrowLeft } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 /**
  * Sticky CTA — fixed bar at the bottom. Appears after the user scrolls
@@ -40,16 +40,6 @@ export default function StickyCTA() {
         <a href="#contact" className="sticky-cta-btn sticky-cta-btn--primary">
           <span>טופס</span>
           <ArrowLeft size={14} strokeWidth={1.6} aria-hidden="true" />
-        </a>
-        <a
-          href="https://wa.me/972523308287"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="sticky-cta-btn sticky-cta-btn--whatsapp"
-          aria-label="פנייה בוואטסאפ"
-        >
-          <MessageCircle size={14} strokeWidth={1.8} aria-hidden="true" />
-          <span>WhatsApp</span>
         </a>
       </div>
     </div>
