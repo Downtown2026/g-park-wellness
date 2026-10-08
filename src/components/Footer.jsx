@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Mail } from 'lucide-react'
 import { Link } from 'react-scroll'
 
 const links = [
@@ -39,10 +39,6 @@ export default function Footer() {
                 <span className="font-body text-[12px] font-[200] text-white/50 leading-[1.6]">
                   המנופים 11, הרצליה<br />מגדלי אקרשטיין כניסה D
                 </span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <Phone size={13} strokeWidth={1.5} className="text-copper/50 flex-shrink-0" />
-                <span className="font-body text-[12px] font-[200] text-white/50" dir="ltr">052-3308287</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail size={13} strokeWidth={1.5} className="text-copper/50 flex-shrink-0" />

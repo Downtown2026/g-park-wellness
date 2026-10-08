@@ -49,7 +49,6 @@ export default function Footer() {
           <ul>
             <li>המנופים 11, הרצליה</li>
             <li>מגדלי אקרשטיין · בניין D · קומה 5</li>
-            <li><a href="tel:+972523308287" dir="ltr">052-330-8287</a></li>
             <li><a href="mailto:sales@g-park.life">sales@g-park.life</a></li>
             <li>פתוח לתיאום בלבד</li>
           </ul>

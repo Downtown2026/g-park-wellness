@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X, Phone } from 'lucide-react'
+import { Menu, X, Mail } from 'lucide-react'
 import Logo from './Logo.jsx'
 
 /**
  * Floating editorial nav bar. Transparent over the hero, swaps to a
  * frosted cream surface once the user scrolls past it. Mobile drawer
- * for narrow screens. ESC closes the drawer. Phone CTA + meeting CTA.
+ * for narrow screens. ESC closes the drawer. Meeting CTA + email.
  */
 const NAV_LINKS = [
   { href: '#project',  label: 'הפרויקט' },
@@ -56,15 +56,6 @@ export default function Nav() {
         </ul>
 
         <div className="site-nav-actions">
-          <a
-            href="tel:+972523308287"
-            className="site-nav-phone"
-            aria-label="חיוג למשרד מכירות 052-330-8287"
-            dir="ltr"
-          >
-            <Phone size={14} strokeWidth={1.6} aria-hidden="true" />
-            <span>052-3308287</span>
-          </a>
           <a href="#contact" className="site-nav-cta">תיאום פגישה</a>
           <button
             type="button"
@@ -90,15 +81,6 @@ export default function Nav() {
         <div className="site-nav-drawer-head">
           <Logo height={32} variant="light" />
           <p className="site-nav-drawer-tagline">ריזורט פרטי. רמת השרון.</p>
-          <a
-            href="tel:+972523308287"
-            className="site-nav-drawer-phone"
-            dir="ltr"
-            onClick={close}
-          >
-            <Phone size={14} strokeWidth={1.6} aria-hidden="true" />
-            <span>052-3308287</span>
-          </a>
         </div>
 
         <ul className="site-nav-drawer-links">
@@ -113,9 +95,9 @@ export default function Nav() {
         </ul>
         <div className="site-nav-drawer-cta">
           <a href="#contact" className="btn btn-primary" onClick={close}>תיאום פגישה</a>
-          <a href="tel:+972523308287" className="btn btn-ghost" dir="ltr" onClick={close}>
-            <Phone size={16} strokeWidth={1.5} aria-hidden="true" />
-            <span>052-330-8287</span>
+          <a href="mailto:sales@g-park.life" className="btn btn-ghost" dir="ltr" onClick={close}>
+            <Mail size={16} strokeWidth={1.5} aria-hidden="true" />
+            <span>sales@g-park.life</span>
           </a>
         </div>
       </div>
